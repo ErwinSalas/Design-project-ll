@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Auth.LoginActivity"
+    android:background="@color/colorCL">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginLeft="@dimen/container_login_horizontal_margin"
+        android:layout_marginRight="@dimen/container_login_horizontal_margin"
+        android:layout_marginTop="@dimen/container_login__vertical_margin"
+        android:layout_marginBottom="@dimen/container_login__vertical_margin"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Container_bot_top_padding"
+            android:layout_marginBottom="@dimen/Container_bot_top_padding"
+            android:text="@string/login_healing"
+            android:textAlignment="center"
+            android:textSize="@dimen/healing1"
+            android:textColor="@color/icons"
+            android:id="@+id/textView"
+             />
+
+        <EditText
+            style="@style/Inputs"
+            android:hint="@string/usuario"
+            android:id="@+id/editTexttUsuario"
+             />
+
+        <EditText
+            style="@style/Inputs"
+            android:id="@+id/editTextContraseña"
+            android:hint="@string/contraseña"
+             />
+        <Button
+            style="@style/Buttons"
+            android:id="@+id/ButtonLogin"
+            android:text="Entrar"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

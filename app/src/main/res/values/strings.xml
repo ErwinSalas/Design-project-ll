@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Design Project ll</string>
+    <string name="login_healing">Iniciar Session</string>
+    <string name="register_healing">Registro</string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="nombre">Nombre</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="numero_telefono">Telefono</string>
+    <string name="latitud">Latitud</string>
+    <string name="longitud">Longitud</string>
+    <!--Property atributs-->
+    <string name="num_cuartos">Cuartos</string>
+    <string name="num_baños">Baños</string>
+    <string name="electricidad">Servicio de luz</string>
+    <string name="agua">Servicio de agua</string>
+    <string name="monto_alquiler">Cuota mensual</string>
+    <string name="internet">Internet</string>
+    <string name="decripcion">Descripcion</string>
+    <string name="direccion">Direccion</string>
+
+</resources>

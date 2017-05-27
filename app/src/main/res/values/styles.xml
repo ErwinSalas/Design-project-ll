@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorP</item>
+        <item name="colorPrimaryDark">@color/colorPD</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Inputs" >
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width" >266dp</item>
+        <item name="android:layout_height">@dimen/text_input_heigth</item>
+        <item name="android:background">@drawable/shapes</item>
+        <item name="android:textColorHint">@color/icons</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginBottom">@dimen/text_input_magin_bot</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="Buttons" >
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width" >266dp</item>
+        <item name="android:layout_height">@dimen/text_input_heigth</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColor">@color/icons</item>
+        <item name="android:layout_marginBottom">@dimen/text_input_magin_bot</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="Inputs_col2" >
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width" >match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shapes</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColorHint">@color/icons</item>
+        <item name="android:layout_marginBottom">@dimen/text_input_magin_bot</item>
+        >
+
+    </style>
+    <style name="Inputs_col1" >
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width" >wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shapes</item>
+        <item name="android:textColorHint">@color/icons</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginBottom">@dimen/text_input_magin_bot</item>
+        <item name="android:layout_marginTop">@dimen/text_input_padding</item>
+        <item name="android:layout_weight">2</item>
+
+    </style>
+    <style name="Inputs_create" >
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width" >match_parent</item>
+        <item name="android:layout_height">@dimen/text_input_heigth</item>
+        <item name="android:background">@drawable/shapes</item>
+        <item name="android:textColorHint">@color/icons</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="input_col_2">
+        <item name="android:background">@drawable/shapes</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColorHint">@color/icons</item>
+        <item name="android:layout_margin">5dp</item>
+
+
+    </style>
+
+</resources>
