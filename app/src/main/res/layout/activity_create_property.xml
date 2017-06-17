@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCL"
+    tools:context="com.example.pavilion.designprojectll.Properties.CreatePropertyActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:stretchColumns="*">
+        <TableRow
+            android:padding="5dp"
+            android:weightSum="6"
+            >
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:src="@mipmap/background"
+                android:layout_marginTop="10dp"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="3"
+                >
+
+                <EditText
+                    style="@style/Inputs_col2"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/longitud"
+                    android:id="@+id/editTextLongitud"
+                    />
+
+                <EditText
+                    style="@style/Inputs_col2"
+                    android:hint="@string/latitud"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/editTextLatitud"
+                    />
+                <EditText
+                    style="@style/Inputs_col2"
+                    android:inputType="number"
+                    android:hint="@string/num_baños"
+                    android:id="@+id/baños"
+                    />
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:padding="5dp"
+            android:weightSum="5"
+
+            >
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:background="@drawable/shapes"
+                android:textColor="@color/icons"
+                android:text="@string/electricidad"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layout_weight="3"
+                />
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:textColor="@color/icons"
+                android:background="@drawable/shapes"
+                android:text="@string/internet"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layout_weight="3"
+
+                />
+        </TableRow>
+        <TableRow
+            android:padding="5dp"
+            android:weightSum="6"
+
+            >
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:background="@drawable/shapes"
+                android:textColor="@color/icons"
+                android:text="@string/agua"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layout_weight="3"
+                />
+            <EditText
+               style="@style/input_col_2"
+                android:inputType="number"
+                android:hint="@string/num_baños"
+                android:id="@+id/editTextBathroom"
+                android:layout_weight="3"
+                />
+        </TableRow>
+        <TableRow
+            android:padding="5dp"
+            android:weightSum="6"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/icons"
+                android:text="@string/decripcion"
+               />
+
+        </TableRow>
+        <TableRow
+            android:padding="5dp"
+            android:weightSum="6"
+            >
+            <EditText
+                style="@style/Inputs_create"
+                android:layout_weight="6"
+                android:inputType="textMultiLine"/>
+
+        </TableRow>
+        <TableRow
+            android:padding="5dp"
+            android:weightSum="6"
+            >
+            <EditText
+                style="@style/input_col_2"
+                android:hint="@string/monto_alquiler"
+                android:id="@+id/editTextDireccion"
+                android:layout_weight="3"
+                />
+            <EditText
+                style="@style/input_col_2"
+                android:inputType="number"
+                android:hint="@string/direccion"
+                android:id="@+id/editTextMount"
+                android:layout_weight="3"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="41dp" />
+
+</RelativeLayout>
