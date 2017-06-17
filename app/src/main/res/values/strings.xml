@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Design Project ll</string>
+    <string name="login_healing">Iniciar Session</string>
+    <string name="register_healing">Registro</string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="nombre">Nombre</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="numero_telefono">Telefono</string>
+    <string name="latitud">Latitud</string>
+    <string name="longitud">Longitud</string>
+    <!--Property atributs-->
+    <string name="num_cuartos">Cuartos</string>
+    <string name="num_baños">Baños</string>
+    <string name="electricidad">Servicio de luz</string>
+    <string name="agua">Servicio de agua</string>
+    <string name="monto_alquiler">Cuota mensual</string>
+    <string name="internet">Internet</string>
+    <string name="decripcion">Descripcion</string>
+    <string name="direccion">Direccion</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main_view_drawer">MainViewDrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="list">Lista</string>
+    <string name="map">Mapa</string>
+    <string name="my_prop">Mis Propiedades</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
