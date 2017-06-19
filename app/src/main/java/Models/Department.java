@@ -5,9 +5,10 @@ package Models;
  */
 public class Department {
     private int id;
+    private String name;
     private int id_owner;
     private int id_renter;
-    private String direction;
+    private String address;
     private int rooms_num;
     private int bath_num;
     private boolean internet_service;
@@ -17,18 +18,21 @@ public class Department {
     private String description;
     private Double latitude;
     private Double longitude;
+    private int payment_amount;
 
     public Department() {
     }
 
-    public Department(int id, int id_owner, int id_renter, String direction,
+    public Department(int id,String name, int id_owner, int id_renter, String address,
                       int rooms_num, int bath_num, boolean internet_service,
                       boolean light_service, boolean water_service, int rate,
-                      String description, Double latitude, Double longitude) {
+                      String description, Double latitude, Double longitude,int payment_amount) {
+
         this.id = id;
+        this.name=name;
         this.id_owner = id_owner;
         this.id_renter = id_renter;
-        this.direction = direction;
+        this.address = address;
         this.rooms_num = rooms_num;
         this.bath_num = bath_num;
         this.internet_service = internet_service;
@@ -38,6 +42,23 @@ public class Department {
         this.description = description;
         this.latitude = latitude;
         this.longitude = longitude;
+        this.payment_amount=payment_amount;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getPayment_amount() {
+        return payment_amount;
+    }
+
+    public void setPayment_amount(int payment_amount) {
+        this.payment_amount = payment_amount;
     }
 
     public int getId() {
@@ -64,12 +85,12 @@ public class Department {
         this.id_renter = id_renter;
     }
 
-    public String getDirection() {
-        return direction;
+    public String getAddress() {
+        return address;
     }
 
-    public void setDirection(String direction) {
-        this.direction = direction;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public int getRooms_num() {

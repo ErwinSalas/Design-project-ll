@@ -1,4 +1,4 @@
-package Models;
+package com.example.pavilion.designprojectll_v2.Adapters;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -11,6 +11,8 @@ import android.widget.TextView;
 import com.example.pavilion.designprojectll_v2.R;
 
 import java.util.ArrayList;
+
+import Models.Comments;
 
 /**
  * Created by Pavilion on 18/6/2017.

@@ -44,8 +44,8 @@
                 <EditText
                     style="@style/Inputs_col2"
                     android:inputType="number"
-                    android:hint="@string/num_baños"
-                    android:id="@+id/baños"
+                    android:hint="@string/num_cuartos"
+                    android:id="@+id/editTextCuartos"
                     />
 
             </LinearLayout>

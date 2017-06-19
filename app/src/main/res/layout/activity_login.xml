@@ -49,6 +49,14 @@
             android:id="@+id/ButtonLogin"
             android:text="Entrar"
             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No tienes cuenta?"
+            android:id="@+id/textViewRegistrarse"
+            android:textColor="@color/icons"
+            android:layout_gravity="center_horizontal" />
     </LinearLayout>
 
 

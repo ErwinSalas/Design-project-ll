@@ -14,6 +14,10 @@
             android:id="@+id/profile"
             android:icon="@drawable/usuario"
             android:title="Perfil" />
+        <item
+            android:id="@+id/requestsList"
+            android:icon="@drawable/ic_description_black_24dp"
+            android:title="Solicitudes" />
 
     </group>
 

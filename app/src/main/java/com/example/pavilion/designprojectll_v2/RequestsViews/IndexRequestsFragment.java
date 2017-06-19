@@ -6,8 +6,16 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+import android.widget.TextView;
 
+import com.example.pavilion.designprojectll_v2.Adapters.ListViewDepartmentAdapter;
+import com.example.pavilion.designprojectll_v2.Adapters.ListViewRequestsAdapter;
 import com.example.pavilion.designprojectll_v2.R;
+
+import Controllers.DepartmentController;
+import Controllers.RentRequestController;
+import Provider.GlobalsProvider;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -18,7 +26,8 @@ import com.example.pavilion.designprojectll_v2.R;
 public class IndexRequestsFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
-
+    ListViewRequestsAdapter adapter;
+    RentRequestController controller;
     public IndexRequestsFragment() {
         // Required empty public constructor
     }
@@ -28,7 +37,13 @@ public class IndexRequestsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_index_requests, container, false);
+        View rootView= inflater.inflate(R.layout.fragment_index_requests, container, false);
+        controller=new RentRequestController();
+        controller.getListFilterByOwner(GlobalsProvider.AuthUser.getId());
+        ListView list = (ListView) rootView.findViewById(R.id.listViewRequests);
+        adapter=new ListViewRequestsAdapter(this.getActivity(), GlobalsProvider.requestsList);
+        list.setAdapter(adapter);
+        return rootView;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

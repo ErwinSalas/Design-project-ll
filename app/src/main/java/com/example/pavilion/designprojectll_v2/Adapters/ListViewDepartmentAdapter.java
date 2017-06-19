@@ -1,4 +1,4 @@
-package Models;
+package com.example.pavilion.designprojectll_v2.Adapters;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -11,17 +11,20 @@ import android.widget.TextView;
 import com.example.pavilion.designprojectll_v2.R;
 
 import java.util.ArrayList;
+import java.util.List;
+
+import Models.Department;
 
 /**
  * Created by Pavilion on 29/5/2017.
  */
-public class ListViewCustomAdapter  extends ArrayAdapter<Property> {
+public class ListViewDepartmentAdapter extends ArrayAdapter<Department> {
 
     private final Activity context;
-    private ArrayList<Property> properties;
+    private List<Department> properties;
 
 
-    public ListViewCustomAdapter(Activity context, ArrayList<Property> properties) {
+    public ListViewDepartmentAdapter(Activity context, List<Department> properties) {
         super(context, R.layout.list_property_item, properties);
         this.context = context;
         this.properties = properties;
@@ -42,9 +45,9 @@ public class ListViewCustomAdapter  extends ArrayAdapter<Property> {
 
         name.setText(properties.get(position).getName());
         description.setText(properties.get(position).getDescription());
-        direccion.setText(properties.get(position).getdireccion());
-        calificacion.setRating(properties.get(position).getCalification());
-        price.setText((String.valueOf(properties.get(position).getAmout())));
+        direccion.setText(properties.get(position).getAddress());
+        calificacion.setRating(properties.get(position).getRate());
+        price.setText((String.valueOf(properties.get(position).getPayment_amount())));
 
         return rowView;
     }

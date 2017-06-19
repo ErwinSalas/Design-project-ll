@@ -34,7 +34,7 @@
         <EditText
             style="@style/Inputs"
             android:hint="@string/correo"
-            android:id="@+id/editTexttCorreo"
+            android:id="@+id/editTextCorreo"
             />
 
         <EditText

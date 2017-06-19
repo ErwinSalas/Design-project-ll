@@ -15,13 +15,15 @@ import android.widget.ListView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.example.pavilion.designprojectll_v2.Adapters.ListViewDepartmentAdapter;
 import com.example.pavilion.designprojectll_v2.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import Models.ListViewCustomAdapter;
+import Controllers.DepartmentController;
 import Models.Property;
+import Provider.GlobalsProvider;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -32,8 +34,8 @@ import Models.Property;
 public class IndexFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
-    ArrayList<Property> model=new ArrayList<Property>();
-    ListViewCustomAdapter adapter=null;
+    DepartmentController controller;
+    ListViewDepartmentAdapter adapter=null;
     public IndexFragment() {
         // Required empty public constructor
     }
@@ -44,12 +46,10 @@ public class IndexFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView= inflater.inflate(R.layout.fragment_index, container, false);
-        model.add(new Property("Apartamentos Menvis",4,"Apartamento comodo",26.564,"Frente al tec"));
-        model.add(new Property("Apartamentos Henrry",4,"Apartamento comodo",26.564,"Frente al tec"));
-        model.add(new Property("Apartamentos villa Flor",4,"Apartamento comodo",26.564,"Frente al tec"));
-        model.add(new Property("Apartamentos Bartis",4,"Apartamento comodo",26.564,"Frente al tec"));
+        controller=new DepartmentController();
+        controller.getList();
         ListView list = (ListView) rootView.findViewById(R.id.listView);
-        adapter=new ListViewCustomAdapter(this.getActivity(), model);
+        adapter=new ListViewDepartmentAdapter(this.getActivity(), GlobalsProvider.departmentsList);
         list.setAdapter(adapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

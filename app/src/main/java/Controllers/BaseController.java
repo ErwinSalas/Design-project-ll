@@ -13,7 +13,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class BaseController {
     private RestProvider service;
     private final Retrofit retrofit;
-    private String API_ROOT = "https://design-service.herokuapp.com/";
+    private String API_ROOT = "https://design-service.herokuapp.com/api/";
 
     public BaseController() {
 
